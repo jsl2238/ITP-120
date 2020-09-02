@@ -10,7 +10,7 @@ public class Ch01_Pc01_Lester_HelloWorld //don't forget class names start with a
     public static void main(String[] args)
     {
         System.out.println("Hello world!\n"); // Print out "Hello world!" and then creates a new line after.
-        System.out.println("My name is Jonathan."); // Print out My name is Jonathan!
+        System.out.println("My name is Jonathan."); // Print out My name is Jonathan! (this is a change!)
     } // end main()
 
 } // end HelloWorld
