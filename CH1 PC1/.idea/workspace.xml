@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97f7c8f0-d074-481e-8c95-cda357da1daf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CH1 PC1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ch01_Pc01_Lester_HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ch01_Pc01_Lester_HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CH2_PC12/out/production/CH2_PC12/com/hex/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CH2_PC12/out/production/CH2_PC12/com/hex/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CH2_PC12/src/com/hex/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CH2_PC12/src/com/hex/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CH2 PC1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CH2_PC12" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -84,10 +87,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="333" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.139.1360.728/0.0.1920.1040@0.0.1920.1040" timestamp="1599499202203" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1599499328803">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2444" y="331" key="FileChooserDialogImpl" timestamp="1599760431137">
+      <screen x="1920" y="139" width="1360" height="728" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/1920.139.1360.728/0.0.1920.1040@0.0.1920.1040" timestamp="1599499328803" />
+    <state x="2444" y="331" key="FileChooserDialogImpl/1920.139.1360.728/0.0.1920.1040@1920.139.1360.728" timestamp="1599760431137" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1599009144783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
