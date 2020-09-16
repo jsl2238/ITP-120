@@ -6,80 +6,43 @@ package com.hex;
 //*     Purpose     Sales Taxes
 //************************************************************************
 
-/*
-all numeric literals and string literals are declared as constants
-declare variables (primitive and referential data types)
-initialize all variables that must have values before use, e.g., those that are referenced before they are defined
-initialization must occur either during or right after declaration, and within housekeeping
-input section has appropriate prompts
-input section stores input in correct variables
-process section performs all calculations
-process section performs processing of data for output
-process section demonstrates concatenation at least once
-output section does not use println method
-output is user-friendly, contains complete sentences, and is both spelling and grammatically correct
-*/
+import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class Ch2_PC7_Lester //don't forget class starts with a cap and be sure to follow the naming requirments
 {
-   // properties or fields or attributes
-   
-   // actions or methods
+
    public static void main(String[] args)
    {
-      // Four Parts to a method
-      // 1) housekeeping -       
-      // declare constants - constants are always in all CAPS
-      
-      // declare primitive data types; use the word store or hold
-      // to describe what the variable is used for
-      
-      // declare referential data types - e.g., String objects
-      
-      // initialize variables, as needed; specify why you are assigning
-      // the default value
-      
-       
-      // 2) input - get from user, file
-      
-      /*
-         SAMPLE INPUT
-         Enter Amount of Purchase: 999.99 (Required)
-         Enter today's date: mm/dd/yyyy (Optional)
-      */
-      
-      // 3) process - manipulating, math operations, concatenation
-      
-      /*
-         Step 1: calculate the State Sales Tax and store in variable
-         
-         Step 2: calculate the County Sales Tax and store in variable
-         
-         Step 3: calculate the Total Sales Tax and store in variable
-         
-         Step 4: calculate the Total Sale and store in variable
+       final double STATE_TAX, TOTAL_STATE_TAX, COUNTY_TAX, TOTAL_COUNTY_TAX,
+                    TOTAL_TAX, TOTAL_SALE_PRICE, AMOUNT_OF_PURCHASE;                                                    //Define all doubles
+       final String DATE_OF_PURCHASE;                                                                                   //Define all String
 
-      */
-      
-      // 4) output - make it pretty and understandable and user-friendly
-      
-      /*
-         SAMPLE OUTPUT
-         Date of Sales: (Optional)
-         Name of Company (Optional)
-         
-         Amount of Purchase:  $999.99 (Required)
-         State Sales Tax:        9.99 (Required)
-         County Sales Tax:       9.99 (Required)
-         Total Tax               9.99
-         ____________________________ (Optional)
-         Total Sale:          $999.99 (Required)
-         
-         Note: for 5 extra points align the numbers correctly (right-aligned).
-      */
+        Scanner input = new Scanner(System.in);                                                                         //Defining the Scanner
+        DecimalFormat df = new DecimalFormat("#.##");                                                            //Defining the DecimalFormat for rounding
+
+        STATE_TAX = 0.04;                                                                                               //Initializing STATE_TAX
+        COUNTY_TAX = 0.02;                                                                                              //Initializing COUNTY_TAX
+
+        System.out.print("What was the amount of your purchase: ");                                                     //Ask user for the amount of their purchase
+        AMOUNT_OF_PURCHASE = Double.parseDouble(input.nextLine());                                                      //Get the user input as a string and then parse it as a double
+        System.out.print("\nWhat was the date of your purchase: ");                                                     //Ask user the date of their purchase
+        DATE_OF_PURCHASE = input.nextLine();                                                                            //Get the date of the purchase as a String
+
+       TOTAL_STATE_TAX = STATE_TAX * AMOUNT_OF_PURCHASE;                                                                //Calculate the total state tax
+       TOTAL_COUNTY_TAX = COUNTY_TAX * AMOUNT_OF_PURCHASE;                                                              //Calculate the total county tax
+       TOTAL_TAX = Double.parseDouble(df.format(TOTAL_STATE_TAX + TOTAL_COUNTY_TAX));                            //Calculate the total of the taxes with rounding
+       TOTAL_SALE_PRICE = Double.parseDouble(df.format((TOTAL_TAX * AMOUNT_OF_PURCHASE) + AMOUNT_OF_PURCHASE));  //Calculate the total sale price while using the DecimalFormat to round
+
+        System.out.print("\n\nDate of Sale:  " + DATE_OF_PURCHASE);                                                     //Print out the date
+        System.out.print("\n");                                                                                         //Leave a blank space
+        System.out.print("\nAmount of Purchase:  " +  "$" + AMOUNT_OF_PURCHASE);                                        //The amount of the purchase
+        System.out.print("\nState Sales Tax:        " + STATE_TAX);                                                     //State sales tax as a percentage
+        System.out.print("\nCounty Sales Tax:       " + COUNTY_TAX);                                                    //County sales tax as a percentage
+        System.out.print("\nTotal Tax:            " + "$" + TOTAL_TAX);                                                 //The total amount of taxes having to be paid
+        System.out.print("\n____________________________");                                                             //A line break
+        System.out.print("\nTotal Sale:        " + "$" + TOTAL_SALE_PRICE);                                             //Print the total sale price
+
    } // end main
 
 } // end class
-
-// Note: comments for each line should include a description of the commands functionality
-//       comments for ending curly braces should indicate the end of the structure, e.g. lns 80 and 82 above
