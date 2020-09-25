@@ -21,10 +21,10 @@ public class Main
 	    double averageScore, testScore1, testScore2, testScore3;                                                        //Define all of our doubles
 
         GRADELETTERS[0] = 'A';                                                                                          //Define the first index of the array to the character 'A'
-        GRADELETTERS[1] = 'B';                                                                                          //Define the first index of the array to the character 'B'
-        GRADELETTERS[2] = 'C';                                                                                          //Define the first index of the array to the character 'C'
-        GRADELETTERS[3] = 'D';                                                                                          //Define the first index of the array to the character 'D'
-        GRADELETTERS[4] = 'F';                                                                                          //Define the first index of the array to the character 'F'
+        GRADELETTERS[1] = 'B';                                                                                          //Define the second index of the array to the character 'B'
+        GRADELETTERS[2] = 'C';                                                                                          //Define the third index of the array to the character 'C'
+        GRADELETTERS[3] = 'D';                                                                                          //Define the fourth index of the array to the character 'D'
+        GRADELETTERS[4] = 'F';                                                                                          //Define the fifth index of the array to the character 'F'
 
 	    // Input
         System.out.print("Please enter your first test score: ");                                                       //Ask for the first grade score
