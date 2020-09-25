@@ -27,11 +27,11 @@ public class Main
         GRADELETTERS[4] = 'F';                                                                                          //Define the first index of the array to the character 'F'
 
 	    // Input
-        System.out.printf("Please enter your first test score: ");                                                      //Ask for the first grade score
+        System.out.print("Please enter your first test score: ");                                                       //Ask for the first grade score
         testScore1 = input.nextDouble();                                                                                //Initializes testScore1 with the user's input as a double
-        System.out.printf("\nPlease enter your second test score: ");                                                   //Ask for the second grade score
+        System.out.print("\nPlease enter your second test score: ");                                                    //Ask for the second grade score
         testScore2 = input.nextDouble();                                                                                //Initializes testScore2 with the user's input as a double
-        System.out.printf("\nPlease enter your third test score: ");                                                    //Ask for the third grade score
+        System.out.print("\nPlease enter your third test score: ");                                                     //Ask for the third grade score
         testScore3 = input.nextDouble();                                                                                //Initializes testScore3 with the user's input as a double
 
         // Processing
