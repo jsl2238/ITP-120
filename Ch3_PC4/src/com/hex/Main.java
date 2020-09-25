@@ -3,7 +3,7 @@ package com.hex;
 //************************************************************************
 //*     @author     Jonathan lester
 //*     Date        9/20/20
-//*     Purpose     Sales Taxes
+//*     Purpose     Test Scores and Grades
 //************************************************************************
 
 import java.text.DecimalFormat;
@@ -49,7 +49,8 @@ public class Main
             currentLetterGrade = GRADELETTERS[0];                                                                       //Set the grade to A
 
         // Output
-        switch (currentLetterGrade) {                                                                                   //Set the condition to be the currentLetterGrade
+        switch (currentLetterGrade)
+        {                                                                                                               //Set the condition to be the currentLetterGrade
             case 'A':                                                                                                   //If the letter grade is an A:
                 System.out.printf("\nWonderful! You made an %s%%, which is the letter grade %c!!",                      //String to be printed
                         df.format(averageScore), currentLetterGrade);                                                   //Define and replace %s and %c
