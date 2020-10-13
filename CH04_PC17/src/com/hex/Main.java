@@ -9,7 +9,6 @@ public class Main
         //Housekeeping
         Scanner input = new Scanner(System.in);                                           //Define input
         final String PICKNUM, WINMSG, TOOLOWMSG, TOOHIGHMSG, INVALIDMSG;                  //Define all strings to be used
-        String question;
         int randomNum, userGuess = -1;                                                    //Define all integers to use
 
         randomNum = (int) (Math.random() * 101);                                          //Randomly generating a number
