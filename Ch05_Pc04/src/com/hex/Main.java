@@ -19,7 +19,7 @@ public class Main
         Scanner scan = new Scanner(System.in);   // Define the Scanner
 
         int numOfRooms = -1;   // Initialize the number of rooms
-        double gasPerGallon = -1, roomAmount;   // Initialize gasPerGallon, define roomAmount;
+        double paintPerGallon = -1, roomAmount;   // Initialize gasPerGallon, define roomAmount;
 
         while (numOfRooms <= 0)
         {
@@ -31,23 +31,23 @@ public class Main
             }   // end if (numOfRooms <= 0)
         }   // end of while (numOfRooms <= 0)
 
-        while (gasPerGallon <= 0)
+        while (paintPerGallon <= 0)
         {
             System.out.printf(Q_PRICE_PER_GALLON);   // ask how much paint is
-            gasPerGallon = scan.nextDouble();   // save how much paint is
-            if (gasPerGallon <= 0.0)
+            paintPerGallon = scan.nextDouble();   // save how much paint is
+            if (paintPerGallon <= 0.0)
             {
                 System.out.println("Please enter a number greater than 0\n");   // warning message
-            }   // end of (gasPerGallon <= 0.0)
-        }   // end of while (gasPerGallon <= 0)
+            }   // end of (paintPerGallon <= 0.0)
+        }   // end of while (paintPerGallon <= 0)
 
         roomAmount = roomSizes(scan, numOfRooms);   // define the roomAmount
 
         System.out.printf(NUMBER_OF_GALLONS_REQUIRED_OUT, roomAmount);    // print out the number of gallons required
         System.out.printf(HOW_MANY_HOURS_OUT, roomAmount * 8);   // print out how many hours it will take
-        System.out.printf(COST_OF_PAINT_OUT, calcPaintCost(gasPerGallon,roomAmount));    // print out the cost of the paint
+        System.out.printf(COST_OF_PAINT_OUT, calcPaintCost(paintPerGallon,roomAmount));    // print out the cost of the paint
         System.out.printf(COST_OF_LABOR_OUT, calcLaborCost(WAGE, roomAmount));    // print out the cost of labor
-        System.out.printf(TOTAL_COST_OUT, totalCost(gasPerGallon, WAGE,roomAmount));   // print out hte total cost
+        System.out.printf(TOTAL_COST_OUT, totalCost(paintPerGallon, WAGE,roomAmount));   // print out the total cost
     }
 
     public static double totalCost(double pricePerGallon, double wage, double roomAmount)
