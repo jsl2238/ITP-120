@@ -1,0 +1,6 @@
+package com.spoop.enums;
+
+public enum Errors
+{
+    INVALID_ENTRY,INVALID_CHARACTER, UPPERCASE_CHARACTER_VIOLATION, NUMBER_VIOLATION, PASSED;
+}
